@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "webpack-env"
+    ],
+    "paths": {
+
+      "@/*": [ "source/*" ],
+      "@npm/*": ["node_modules/*"],
+
+      "@data/*":   [ "source/data/*" ],
+      "@store/*":  [ "source/store/*" ],
+      "@config/*": [ "source/config/*" ],
+      "@middleware/*": [ "source/middleware/*" ],
+      "@utilities/*":  [ "source/utilities/*" ],
+      
+      "@common/*": [ "source/common/*" ],
+      "@assets/*": [ "source/common/assets/*" ],
+      "@icons/*":  [ "source/common/assets/svg/*" ],
+
+      "@application/*" : [ "source/application/*" ],
+      "@website/*": [ "source/website/*" ],
+
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "source/**/*.ts",
+    "source/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

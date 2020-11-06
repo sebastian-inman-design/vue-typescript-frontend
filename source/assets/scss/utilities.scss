@@ -1,0 +1,7 @@
+.empty\:hidden:empty {
+	display: none;
+}
+
+.not-empty\:hidden:not(:empty) {
+	display: none;
+}

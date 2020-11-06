@@ -1,0 +1,68 @@
+h1, h2, h3, h4, h5, h6 {
+	@apply flex;
+	@apply items-center;
+}
+
+h1 {
+	@apply tracking-5;
+	@apply font-medium;
+	font-size: 32px;
+}
+
+h2 {
+	@apply font-medium;
+	line-height: 1.375;
+	font-size: 26px;
+}
+
+h3 {
+	@apply font-medium;
+	line-height: 1.165;
+	font-size: 21px;
+}
+
+h4 {
+	@apply font-medium;
+	font-size: 18px;
+}
+
+h5 {
+	@apply font-semibold;
+	line-height: 1.365;
+	font-size: 15px;
+}
+
+h6 {
+	@apply font-semibold;
+	@apply tracking-5;
+	@apply uppercase;
+	line-height: 1.365;
+	font-size: 14px;
+}
+
+p {
+	@apply font-normal;
+	line-height: 150%;
+	font-size: 14px;
+
+	a:hover,
+	a:focus-within {
+		@apply underline;
+	}
+
+}
+
+small {
+	font-size: 75%;
+
+	a {
+		font-size: inherit;
+	}
+	
+}
+
+a {
+	@apply no-underline;
+	@apply text-sm;
+	transition: all 200ms ease-in-out;
+}
